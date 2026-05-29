@@ -1,9 +1,12 @@
 ## How to Run
+
+##1. Start the database
 ```bash
-dotnet run --project PowerPositionAggregator
+docker compose up -d
 ```
-
-#Parameters
-
-* `--AggregatorSettings:IntervalMinutes` (Default: `5`)
-* `--AggregatorSettings:ExportFolderPath` (Default: `"./"`)
+##2. Run the app
+```bash
+dotnet run
+```
+##3. Make requests
+Open HolidayApp.http in and run the requests.
